@@ -1,0 +1,135 @@
+/*----- Fonts -----*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@300;400;700&display=swap");
+
+/*----- Variables -----*/
+// Color
+$white: #fff;
+$black: #000;
+$font-color: #86878b;
+$heading-color: #212121;
+
+// Typography
+$font-primary: "Open Sans", sans-serif;
+$font-secondary: "Raleway", sans-serif;
+
+$font-size: 1.4rem;
+$h1-font-size: 3.6rem;
+$h2-font-size: $h1-font-size;
+$h3-font-size: 2rem;
+$h4-font-size: 1.4rem;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+$line-height: $font-size * 1.6;
+
+/*----- Typography -----*/
+h1 {
+  font-size: $h1-font-size;
+  font-weight: $regular;
+  color: $white;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: $h2-font-size;
+  font-weight: $regular;
+  color: $heading-color;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: $h3-font-size;
+  font-weight: $bold;
+  color: $heading-color;
+}
+
+h4 {
+  font-size: $h4-font-size;
+  font-weight: $semibold;
+  color: $heading-color;
+}
+
+p {
+  font-size: $font-size;
+  color: $font-color;
+  line-height: $line-height;
+}
+
+/*----- General Style -----*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: $regular $font-size $font-primary;
+  color: $font-color;
+  background: $white;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
