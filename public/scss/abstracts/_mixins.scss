@@ -1,0 +1,29 @@
+@mixin marginX($right, $left) {
+  margin-right: $right;
+  margin-left: $left;
+}
+
+@mixin marginY($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin paddingX($right, $left) {
+  padding-right: $right;
+  padding-left: $left;
+}
+
+@mixin paddingY($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin dividerAfter($width, $height, $background) {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: $width;
+  height: $height;
+  background: $background;
+}

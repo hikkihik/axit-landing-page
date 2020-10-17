@@ -1,0 +1,99 @@
+.feature-two {
+  @include paddingY(10.8rem, 13.3rem);
+
+  .feature-two__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    @include marginX(-1.5rem, -1.5rem);
+
+    .feature-two__img {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.33%;
+      flex: 0 0 58.33%;
+      max-width: 58.33%;
+      @include paddingX(1.5rem, 1.5rem);
+
+      img {
+        -webkit-box-shadow: 0 1.5rem 3rem 0.3rem rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1.5rem 3rem 0.3rem rgba(0, 0, 0, 0.3);
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+
+    .feature-two__content {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.66%;
+      flex: 0 0 41.66%;
+      max-width: 41.66%;
+      @include paddingX(1.5rem, 1.5rem);
+
+      .feature-two__title {
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+        position: relative;
+
+        &::after {
+          @include dividerAfter(6.4rem, 0.2rem, $primary-color);
+        }
+      }
+
+      .feature-two__desc {
+        margin-bottom: 4.7rem;
+      }
+
+      .sublist {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        .sublist__item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-bottom: 4.2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .sublist__icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            border: 0.2rem solid $primary-color;
+            position: relative;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+
+            i {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              color: $primary-color;
+              font-size: 1.44rem;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          .sublist__content {
+            margin-left: 3rem;
+          }
+        }
+      }
+    }
+  }
+}

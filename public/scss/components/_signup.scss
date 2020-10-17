@@ -1,0 +1,115 @@
+.signup {
+  position: relative;
+  width: 100%;
+  max-width: 36rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  .signup__header {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    background: #f5f5f5;
+    padding: 2rem 4rem;
+    text-align: center;
+    border-radius: 0.4rem 0.4rem 0 0;
+
+    .signup__title {
+      color: #333;
+
+      .signup__text {
+        color: $primary-color;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  form {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    .signup__body {
+      background: $white;
+      padding: 3rem 4rem 5rem;
+
+      .signup__form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        .signup__input {
+          width: 100%;
+          margin-bottom: 3.6rem;
+          padding: 1rem;
+          border: 0;
+          border-bottom: thin solid rgba(0, 0, 0, 0.16);
+          font-family: $font-primary;
+          font-size: $font-size;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &::-webkit-input-placeholder {
+            color: #bdbdbd;
+            font-family: $font-primary;
+            font-size: $font-size;
+          }
+
+          &::-moz-placeholder {
+            color: #bdbdbd;
+            font-family: $font-primary;
+            font-size: $font-size;
+          }
+
+          &:-ms-input-placeholder {
+            color: #bdbdbd;
+            font-family: $font-primary;
+            font-size: $font-size;
+          }
+
+          &::-ms-input-placeholder {
+            color: #bdbdbd;
+            font-family: $font-primary;
+            font-size: $font-size;
+          }
+
+          &::placeholder {
+            color: #bdbdbd;
+            font-family: $font-primary;
+            font-size: $font-size;
+          }
+        }
+      }
+    }
+
+    .signup__btn {
+      width: 100%;
+      color: $white;
+      font-weight: $semibold;
+      font-size: 1.5rem;
+      padding: 2rem 0;
+      background: $primary-color;
+      border: 0;
+      border-radius: 0 0 0.4rem 0.4rem;
+      cursor: pointer;
+      -webkit-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear;
+
+      &:hover {
+        background: rgba(255, 155, 81, 0.9);
+      }
+    }
+  }
+}

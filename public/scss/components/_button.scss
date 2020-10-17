@@ -1,0 +1,32 @@
+.btn {
+  display: inline-block;
+  color: $white;
+  font-weight: $semibold;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem 2.5rem;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+
+  &.btn-download--transp {
+    background: transparent;
+    border: 0.1rem solid $white;
+    min-width: 13.5rem;
+
+    &:hover {
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  &.btn-download--bg {
+    background: $primary-color;
+    min-width: 12.1rem;
+    border-radius: 0.4rem;
+
+    &:hover {
+      background: rgba(255, 155, 81, 0.9);
+    }
+  }
+}

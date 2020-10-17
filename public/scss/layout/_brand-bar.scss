@@ -1,0 +1,64 @@
+.brand-bar {
+  @include paddingY(2.3rem, 2.3rem);
+  -webkit-box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.38);
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.38);
+
+  .brand-bar__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    @include marginX(-1.5rem, -1.5rem);
+
+    .brand-bar__info {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 41.66%;
+      flex: 0 0 41.66%;
+      max-width: 41.66%;
+      @include paddingX(1.5rem, 1.5rem);
+    }
+
+    .brand-bar__icon {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 58.33%;
+      flex: 0 0 58.33%;
+      max-width: 58.33%;
+      @include paddingX(1.5rem, 1.5rem);
+
+      .icon__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        .icon__item {
+          margin-right: 5.5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            color: #ccc;
+            font-size: 4rem;
+
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
