@@ -42,6 +42,13 @@
       flex: 0 0 41.66%;
       max-width: 41.66%;
       @include paddingX(1.5rem, 1.5rem);
+
+      img {
+        -webkit-box-shadow: 0 1.5rem 3rem 0.3rem rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1.5rem 3rem 0.3rem rgba(0, 0, 0, 0.3);
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
     }
   }
 }
