@@ -68,8 +68,7 @@
           }
 
           .sublist__icon {
-            width: 4rem;
-            height: 4rem;
+            @include size(4rem);
             border-radius: 50%;
             border: 0.2rem solid $primary-color;
             position: relative;
@@ -78,14 +77,9 @@
             flex: 0 0 auto;
 
             i {
-              position: absolute;
-              top: 50%;
-              left: 50%;
+              @include centerAbsolute("both");
               color: $primary-color;
               font-size: 1.44rem;
-              -webkit-transform: translate(-50%, -50%);
-              -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
             }
           }
 

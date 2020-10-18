@@ -1,5 +1,5 @@
 .feature-three {
-  background: #f5f5f5;
+  background: $bg-section;
   @include paddingY(9rem, 13rem);
 
   .feature-three__wrapper {

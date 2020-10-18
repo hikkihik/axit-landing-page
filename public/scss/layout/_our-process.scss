@@ -1,0 +1,74 @@
+.our-process {
+  @include paddingY(10.8rem, 10.6rem);
+
+  .our-process__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 8rem;
+
+    .our-process__title {
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+      position: relative;
+
+      &::after {
+        @include dividerAfter(6.4rem, 0.2rem, $primary-color, 50%) {
+          @include transform(translateX(-50%));
+        }
+      }
+    }
+  }
+
+  .our-process__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    @include marginX(-1.5rem, -1.5rem);
+
+    .our-process__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      text-align: center;
+      @include paddingX(1.5rem, 1.5rem);
+
+      .item__icon-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin-bottom: 3rem;
+
+        .item__icon {
+          border-radius: 50%;
+          border: 0.2rem solid $primary-color;
+          position: relative;
+          @include size(7rem);
+
+          i {
+            @include centerAbsolute("both");
+            color: $primary-color;
+            font-size: 2.4rem;
+          }
+        }
+      }
+
+      .item__title {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

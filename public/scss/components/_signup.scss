@@ -103,9 +103,7 @@
       border: 0;
       border-radius: 0 0 0.4rem 0.4rem;
       cursor: pointer;
-      -webkit-transition: all 0.25s linear;
-      -o-transition: all 0.25s linear;
-      transition: all 0.25s linear;
+      @include transition(0.25s, linear);
 
       &:hover {
         background: rgba(255, 155, 81, 0.9);

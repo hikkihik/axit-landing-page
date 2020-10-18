@@ -18,12 +18,55 @@
   padding-bottom: $bottom;
 }
 
-@mixin dividerAfter($width, $height, $background) {
+@mixin transition($duration, $timing-function, $property: all) {
+  -webkit-transition: $property $duration $timing-function;
+  -o-transition: $property $duration $timing-function;
+  transition: $property $duration $timing-function;
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin centerAbsolute($pos) {
+  position: absolute;
+  @if $pos == "both" {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  } @else if $pos == "left" {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  } @else if $pos == "top" {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@mixin dividerAfter($width, $height, $background, $left: 0) {
   content: "";
   position: absolute;
   bottom: 0;
-  left: 0;
+  @if $left == 0 {
+    left: 0;
+  } @else {
+    left: 50%;
+  }
   width: $width;
   height: $height;
   background: $background;
+  @content;
 }
