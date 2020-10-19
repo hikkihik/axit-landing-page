@@ -8,14 +8,14 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    @include marginX(-1.5rem, -1.5rem);
+    @include marginX(-1.5rem);
 
     .feature-three__content {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 58.33%;
       flex: 0 0 58.33%;
       max-width: 58.33%;
-      @include paddingX(1.5rem, 1.5rem);
+      @include paddingX(1.5rem);
 
       .feature-three__title {
         padding-bottom: 3rem;
@@ -41,7 +41,7 @@
       -ms-flex: 0 0 41.66%;
       flex: 0 0 41.66%;
       max-width: 41.66%;
-      @include paddingX(1.5rem, 1.5rem);
+      @include paddingX(1.5rem);
 
       img {
         -webkit-box-shadow: 0 1.5rem 3rem 0.3rem rgba(0, 0, 0, 0.3);

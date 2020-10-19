@@ -1,19 +1,19 @@
-@mixin marginX($right, $left) {
+@mixin marginX($right, $left: $right) {
   margin-right: $right;
   margin-left: $left;
 }
 
-@mixin marginY($top, $bottom) {
+@mixin marginY($top, $bottom: $top) {
   margin-top: $top;
   margin-bottom: $bottom;
 }
 
-@mixin paddingX($right, $left) {
+@mixin paddingX($right, $left: $right) {
   padding-right: $right;
   padding-left: $left;
 }
 
-@mixin paddingY($top, $bottom) {
+@mixin paddingY($top, $bottom: $top) {
   padding-top: $top;
   padding-bottom: $bottom;
 }

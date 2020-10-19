@@ -59,14 +59,14 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 9.91%;
-    @include marginX(-1.5rem, -1.5rem);
+    @include marginX(-1.5rem);
 
     .header__info {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
       max-width: 50%;
-      @include paddingX(1.5rem, 1.5rem);
+      @include paddingX(1.5rem);
 
       .header__logo {
         margin-bottom: 3.5rem;
@@ -107,7 +107,7 @@
       -ms-flex: 0 0 50%;
       flex: 0 0 50%;
       max-width: 50%;
-      @include paddingX(1.5rem, 1.5rem);
+      @include paddingX(1.5rem);
     }
   }
 }

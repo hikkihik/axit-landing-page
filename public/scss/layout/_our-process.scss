@@ -33,7 +33,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    @include marginX(-1.5rem, -1.5rem);
+    @include marginX(-1.5rem);
 
     .our-process__item {
       -webkit-box-flex: 0;
@@ -41,7 +41,7 @@
       flex: 0 0 33.33%;
       max-width: 33.33%;
       text-align: center;
-      @include paddingX(1.5rem, 1.5rem);
+      @include paddingX(1.5rem);
 
       .item__icon-wrapper {
         display: -webkit-box;

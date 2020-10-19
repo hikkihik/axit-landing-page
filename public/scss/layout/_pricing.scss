@@ -1,0 +1,150 @@
+.pricing {
+  background: $bg-section;
+  @include paddingY(10.8rem, 9.6rem);
+
+  .pricing__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 8rem;
+
+    .pricing__title {
+      padding-bottom: 3rem;
+      margin-bottom: 3rem;
+      position: relative;
+
+      &::after {
+        @include dividerAfter(6.4rem, 0.2rem, $primary-color, 50%) {
+          @include transform(translateX(-50%));
+        }
+      }
+    }
+  }
+
+  .pricing__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    @include marginX(-1.5rem, -1.5rem);
+
+    .pricing__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      @include paddingX(1.5rem, 1.5rem);
+
+      &:first-child,
+      &:last-child {
+        margin-top: 4.5rem;
+      }
+
+      .pricing__card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+
+        .card__header {
+          background: $card-color;
+          border-bottom: 0.1rem solid $white;
+          @include paddingY(2rem);
+
+          .title {
+            color: $white;
+          }
+        }
+
+        .card__price {
+          background: $card-color;
+          overflow: hidden;
+          @include paddingY(4rem, 1rem);
+
+          .price__desc {
+            color: $white;
+            font-family: $font-secondary;
+            font-weight: $bold;
+
+            .dollar {
+              font-size: 3.5rem;
+              bottom: 0;
+            }
+
+            .number {
+              font-size: 9.4rem;
+            }
+
+            .sub-number {
+              font-size: 9.4rem;
+              bottom: 0;
+            }
+          }
+        }
+
+        .card__sub-text {
+          background: $card-color;
+          @include paddingY(2rem);
+
+          .sub-text__desc {
+            font-weight: $semibold;
+          }
+        }
+
+        .card__popular {
+          &.hidden {
+            background: $primary-color;
+            height: 0.5rem;
+          }
+
+          &.visible {
+            background: $primary-color;
+            @include paddingY(1.5rem);
+          }
+
+          .popular__desc {
+            color: $white;
+            font-weight: $bold;
+            text-transform: uppercase;
+          }
+        }
+
+        .card__feature {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+
+          .feature__item {
+            background: $white;
+            border-bottom: 0.1rem solid $bg-section;
+            @include paddingY(1.6rem);
+
+            &:last-child {
+              border: 0;
+            }
+
+            .feature__desc {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}

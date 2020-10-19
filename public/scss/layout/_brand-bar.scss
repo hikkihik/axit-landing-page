@@ -12,14 +12,14 @@
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    @include marginX(-1.5rem, -1.5rem);
+    @include marginX(-1.5rem);
 
     .brand-bar__info {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 41.66%;
       flex: 0 0 41.66%;
       max-width: 41.66%;
-      @include paddingX(1.5rem, 1.5rem);
+      @include paddingX(1.5rem);
     }
 
     .brand-bar__icon {
@@ -27,7 +27,7 @@
       -ms-flex: 0 0 58.33%;
       flex: 0 0 58.33%;
       max-width: 58.33%;
-      @include paddingX(1.5rem, 1.5rem);
+      @include paddingX(1.5rem);
 
       .icon__list {
         display: -webkit-box;
